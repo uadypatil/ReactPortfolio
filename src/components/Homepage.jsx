@@ -5,7 +5,7 @@ import AboutUs from './homepage/AboutUs';
 import Education from './homepage/Education';
 import Projects from './homepage/Projects';
 import Skills from './homepage/Skills';
-import Certification from './homepage/certification';
+import Certification from './homepage/Certification';
 import Footer from './homepage/Footer';
 
 const Homepage = () => {
