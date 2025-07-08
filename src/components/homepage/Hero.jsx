@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import myPic from '../../assets/mypic.jpg';
 import '../../index.css';
 
 const Hero = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true,     // whether animation should happen only once
+        });
+    }, []);
+
+
+
     return (
         <div className="container-fluid m-0 hero-container hero-bg hero-height">
             <div className="container pt-5">
-                <div className="d-flex  mt-5">
-                    <div className="text-div w-50 me-5">
+                <div className="d-flex hero-container-d-flex mt-5">
+                    <div className="text-div w-50 me-5" data-aos="fade-left">
                         <div className="text-danger">
                             <p>GET EVERY SINGLE SOLUTION</p>
                         </div>
@@ -34,7 +45,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="ms-5 ps-5">
+                    <div className="ms-5 ps-5" data-aos="fade-right">
                         <img src={myPic} alt="" className='img-fluid custom-image ms-5' />
                     </div>
 

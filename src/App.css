@@ -1,150 +1,259 @@
-.custom-nav-main {
-    background: rgba(20, 14, 26, 0.9);
-}
+    :root {
+        --background-color-dark: rgb(20, 14, 26);
+        --hero-background-color-gradient: radial-gradient(circle at top left, rgb(23, 31, 39) 0%, rgba(18, 24, 30, 1) 100%);
+        --side-color: #ffc107;
+        --theme-color: #5BB7EA;
+        --color-light: rgb(222, 224, 233);
+        --light-color: #fff;
 
-.custom-nav-ulist {
-    padding-top: 20px;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
+        --primary-red: rgb(220, 53, 69);
+    }
 
-.custom-nav-ulist li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    margin-bottom: 5px;
-    transition: 0.3s;
-}
+    .btn-primary {
+        background-color: var(--primary-red);
+        border-color: var(--primary-red);
+        transition: 0.3s ease-in-out;
+    }
 
-.nav-active {
-    border-bottom: 1px solid #fff;
-    border-radius: 5px;
-    transition: 0.3s;
-}
+    .btn-primary:hover {
+        background-color: var(--hero-background-color-gradient);
+        border-color: var(--primary-red);
+        color: var(--primary-red);
+        transition: 0.3s ease-in-out;
+    }
 
-.nav-active:hover {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
-    border-radius: 10px;
-    transition: 0.3s;
-}
+    .custom-nav-main {
+        background: rgba(20, 14, 26, 0.9);
+    }
 
-.custom-nav-ulist li:hover {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-radius: 8px;
-    transition: 0.5s;
-}
+    .custom-nav-ulist {
+        padding-top: 20px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
 
-.custom-nav-ulist li {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-}
+    .custom-nav-ulist li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin-bottom: 5px;
+        transition: 0.3s;
+    }
 
-.custom-nav-ulist li:hover .nav-active {
-    padding-bottom: 10px;
-    border-bottom: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
+    .nav-active {
+        border-bottom: 1px solid #fff;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
 
-.custom-nav-ulist li:last-child {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-radius: 8px;
-}
+    .nav-active:hover {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
 
-.custom-nav-ulist li:last-child:hover {
-    border-top: 1px solid #e824fa;
-    border-bottom: 1px solid #e824fa;
-    border-radius: 8px;
-}
+    .custom-nav-ulist li:hover {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
 
+    .custom-nav-ulist li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0);
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
 
+    .custom-nav-ulist li:hover .nav-active {
+        padding-bottom: 10px;
+        border-bottom: none;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
 
+    .custom-nav-ulist li:last-child {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-radius: 8px;
+    }
 
+    .custom-nav-ulist li:last-child:hover {
+        border-top: 1px solid #e824fa;
+        border-bottom: 1px solid #e824fa;
+        border-radius: 8px;
+    }
 
-
-
-
-
-
-/* css for hero section */
-.hero-bg {
-    background-color: rgb(20, 14, 26);
-}
-
-.hero-height {
-    height: 90dvh;
-}
-
-.custom-image {
-    width: auto;
-    height: 200px;
-}
-
-/* education section css */
-.custom-edu-card {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-.custom-edu-card:hover {
-    transition: 0.3s;
-    transform: translate(0%, -5%);
-    background-color: rgb(20, 14, 26);
-    color: #fff;
-}
+    /* HERO CONTAINER FLEXIBILITY */
+    @media screen AND (max-width: 500px) {
+        .hero-container-d-flex {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
 
 
-/* projects section css */
-.bg-projects {
-    background-color: rgb(234, 247, 251);
-
-}
 
 
-.text-headline {
-    color: rgb(220, 53, 69);
-}
-
-/* certification section style */
-.certification-image {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin: auto;
-}
-
-.read-more-btn {
-    border: 1px solid rgb(220, 53, 69);
-    border-radius: 20px;
-    padding: 5px 15px 5px 15px;
-    text-decoration: none;
-    color: rgb(220, 53, 69);
-    transition: 0.3s;
-}
-
-.read-more-btn:hover {
-    transition: 0.3s;
-    color: white;
-    background-color: rgb(220, 53, 69);
-}
 
 
-.btn-social {
-    width: 45px;
-    height: 45px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 10px;
-    text-align: center;
-    border-radius: 45px;
-}
+
+
+
+    /* css for hero section */
+    .hero-bg {
+        background-color: rgb(20, 14, 26);
+    }
+
+    .hero-height {
+        height: 90dvh;
+    }
+
+    .custom-image {
+        width: auto;
+        height: 200px;
+    }
+
+    /* education section css */
+    .custom-edu-card {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+    .custom-edu-card:hover {
+        transition: 0.3s;
+        transform: translate(0%, -5%);
+        background-color: rgb(20, 14, 26);
+        color: #fff;
+    }
+
+
+    /* projects section css */
+    .bg-projects {
+        background-color: rgb(234, 247, 251);
+
+    }
+
+
+    .text-headline {
+        color: rgb(220, 53, 69);
+    }
+
+    /* certification section style */
+    .certification-image {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .read-more-btn {
+        border: 1px solid rgb(220, 53, 69);
+        border-radius: 20px;
+        padding: 5px 15px 5px 15px;
+        text-decoration: none;
+        color: rgb(220, 53, 69);
+        transition: 0.3s;
+    }
+
+    .read-more-btn:hover {
+        transition: 0.3s;
+        color: white;
+        background-color: rgb(220, 53, 69);
+    }
+
+
+    .btn-social {
+        width: 45px;
+        height: 45px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+        text-align: center;
+        border-radius: 45px;
+    }
+
+    .experience-main-divh100 {
+        height: auto;
+    }
+
+    /* EDUCATION CONTAINER GRADIENT COLOR */
+    .hero-education-container {
+        height: auto;
+        /* height: 100dvh; */
+        background: var(--hero-background-color-gradient);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding: 2rem;
+        padding-top: 30vh;
+        padding-bottom: 20%;
+        color: white;
+        background-position: fixed;
+    }
+
+
+    .hero-education-container::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        height: 30vh;
+        background: linear-gradient(to top, var(--background-color-dark), transparent);
+        padding-bottom: 0;
+        margin-bottom: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+
+    .hero-education-container::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 30vh;
+        background: linear-gradient(to bottom, rgba(20, 14, 26, 1), transparent);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* CUSTOMIZED EXPERIENCE CARDS */
+    .custom-exp-card {
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-left: 1px solid var(--light-color);
+        border-radius: 0px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    /* PROJECT SECTION CUSTOMIZED CARDS */
+    .custom-project-card{
+        display: flex;
+        align-items: center;
+        height: 80vh;
+    }
+
+
+
+    .hide{
+        display: none;
+    }
