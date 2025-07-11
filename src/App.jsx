@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Homepage';
 import ArgComponent from './components/ArgumentComponent';
 import './App.css'
+import './NatureExplorerStyle.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Includes Popper and Bootstrap JS
 import 'bootstrap-icons/font/bootstrap-icons.css';

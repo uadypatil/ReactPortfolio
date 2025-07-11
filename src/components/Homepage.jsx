@@ -6,6 +6,7 @@ import Education from './homepage/Education';
 import Projects from './homepage/Projects';
 import Skills from './homepage/Skills';
 import Certification from './homepage/Certification';
+import NatureExplorer from './homepage/NatureExplorer';
 import Footer from './homepage/Footer';
 
 const Homepage = () => {
@@ -13,11 +14,12 @@ const Homepage = () => {
         <div >
             <Navbar />
             <Hero />
-            {/* <AboutUs /> */}
+            <AboutUs />
             <Education />
             <Projects />
             <Skills />
             <Certification />
+            {/* <NatureExplorer /> */}
             <Footer />
 
         </div>

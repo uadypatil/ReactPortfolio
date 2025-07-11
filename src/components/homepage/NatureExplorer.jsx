@@ -3,14 +3,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../index.css';
 import cert1 from '../../assets/rest_api_certificate.pdf';
 
-const Certification = () => {
+const NatureExplorer = () => {
     return (
         <div className="container-fluid m-0 hero-container h-auto" id='certification'>
             <div className="container pt-5">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h1 className='text-center text-headline fw-bold mb-5'  data-aos="fade-right">Certifications</h1>
+                        <h1 className='text-center text-headline fw-bold mb-5' data-aos="fade-right">Nature Explorer</h1>
                     </div>
+                </div>
+
+                <div className="col-12 text-center">
+                    <p>
+                        I’m not just a developer — I’m a Nature Explorer at heart.
+                    </p>
+                    <p>
+                        Beyond the screen and code, I find inspiration in the calm chaos of nature. Trekking through lush forests, capturing scenic sunsets, or pausing to admire the smallest leaf — these moments remind me why I value creativity, clarity, and curiosity in everything I do.
+                    </p>
+                    <p>
+                        Exploring the natural world fuels my passion for building digital experiences that feel alive, intuitive, and meaningful. I believe that nature teaches balance, and I bring that philosophy into my work — blending technology with purpose, and aesthetics with functionality.
+                    </p>
                 </div>
 
                 <div className="row">
@@ -52,7 +64,7 @@ const Certification = () => {
                         </p>
                     </div>
 
-                    <div className="col-6"  data-aos="fade-left">
+                    <div className="col-6" data-aos="fade-left">
                         {/* <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/133283466" frameborder="0" className='certification-image'></iframe> */}
                         {/* <img src={cert1} alt="" className='img-fluid certification-image' /> */}
                         <iframe src={cert1} frameborder="0" class="certification-image h-100"></iframe>
@@ -65,4 +77,4 @@ const Certification = () => {
     );
 };
 
-export default Certification;
+export default NatureExplorer;
