@@ -66,11 +66,6 @@ const HireMe = () => {
 
     return (
         <>
-            {/* Trigger button */}
-            <a href="#" data-bs-toggle="modal" data-bs-target="#hireMeModal">
-                Hire Me
-            </a>
-
             {/* Modal */}
             <div className="modal fade" id="hireMeModal" tabIndex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg">
