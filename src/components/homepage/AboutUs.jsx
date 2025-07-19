@@ -115,7 +115,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div class="footer-animated-line"></div>
+                <div className="footer-animated-line"></div>
             </div>
         </div>
     )

@@ -39,7 +39,7 @@ const Hero = () => {
                                 <button className="btn btn-danger">
                                     Get my Resume
                                 </button>
-                                <a href='https://linkedin.com/in/udayapatil' className="btn btn-light">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#hireMeModal" className="btn btn-light">
                                     Hire Me
                                 </a>
                             </div>

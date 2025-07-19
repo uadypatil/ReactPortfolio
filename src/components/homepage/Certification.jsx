@@ -15,7 +15,7 @@ const Certification = () => {
 
                 <div className="row">
                     <div className="col-6">
-                        <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/133283466" frameborder="0" className='certification-image' data-aos="fade-right"></iframe>
+                        <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/133283466" frameBorder="0" className='certification-image' data-aos="fade-right"></iframe>
                         {/* <img src={cert1} alt="" className='img-fluid certification-image' /> */}
                     </div>
 
@@ -55,7 +55,7 @@ const Certification = () => {
                     <div className="col-6"  data-aos="fade-left">
                         {/* <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/133283466" frameborder="0" className='certification-image'></iframe> */}
                         {/* <img src={cert1} alt="" className='img-fluid certification-image' /> */}
-                        <iframe src={cert1} frameborder="0" class="certification-image h-100"></iframe>
+                        <iframe src={cert1} frameBorder="0" className="certification-image h-100"></iframe>
                     </div>
                 </div>
 
