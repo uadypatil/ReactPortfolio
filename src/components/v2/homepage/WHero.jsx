@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Zap, Download, Mail } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import myPic from '../../../assets/mypic.jpg'; // Assuming asset path
+import myPic from '../../../assets/mypic2.png'; // Assuming asset path
 
 const WHero = () => {
     useEffect(() => {
@@ -37,19 +37,23 @@ const WHero = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a
-                                href="#contact"
+                                href="https://www.linkedin.com/in/udayapatil"
                                 className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-bold text-lg shadow-xl flex items-center justify-center hover:shadow-2xl transition-all duration-300 hover:scale-105"
                             >
                                 <Mail className="mr-2 w-5 h-5" />
                                 Hire Me
-                            </a><a
-                                href="/resume.pdf"
-                                download
+                            </a>
+
+                            {/* resumes/uday patil java developer resume 251125.pdf */}
+                            <a
+                                href="https://www.linkedin.com/in/udayapatil" 
+                                // Updated path (use %20 if keeping spaces: /resumes/uday%20patil%20java%20developer%20resume%20251125.pdf)
+                                // download="Uday-Patil-Resume.pdf" // Optional: Custom name for the downloaded file
                                 className="px-8 py-4 bg-white border-2 border-amber-500 text-amber-600 rounded-xl 
-                                            font-bold text-lg shadow-lg hover:bg-amber-50 transition-all duration-300 
-                                            hover:scale-105 flex items-center gap-2"
+                  font-bold text-lg shadow-lg hover:bg-amber-50 transition-all duration-300 
+                  hover:scale-105 flex items-center gap-2"
                             >
-                                <Download className="w-5 h-5" />
+                                {/* <Download className="w-5 h-5" /> */}
                                 Download Resume
                             </a>
 
