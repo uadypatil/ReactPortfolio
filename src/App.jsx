@@ -63,6 +63,7 @@ import Logout from './components/Logout';
 import DashboardWrapper from './components/admin/DashboardWrapper';
 import ContectContent from './components/admin/ContectContent';
 import HiringContent from './components/admin/HiringContent';
+import MellinumBusinessPark from './components/companies/MellinumBusinessPark';
 
 function App() {
   useEffect(() => {
@@ -77,6 +78,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/admin/login" element={<Login />} />
           <Route path="/admin/logout" element={<Logout />} />
+          <Route path="/companies/mdb/list" element={<MellinumBusinessPark />} /> {/* companies/mdb/list */}
 
           {/* Dashboard layout with nested routes */}
           <Route path="/admin" element={<Dashboard />}>
